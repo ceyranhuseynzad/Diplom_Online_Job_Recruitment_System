@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans", cursive;
+}
+
+.contanier {
+  max-width: 1400px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.div {
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+}
+
+nav {
+  width: 100%;
+  padding: 30px 0px;
+}
+nav .nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  align-items: center;
+}
+nav .nav-list .ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-list .ul .a {
+  position: relative;
+  transition: 0.9s;
+}
+nav .nav-list .ul .a:hover .b {
+  display: block;
+}
+nav .nav-list .ul .a .b {
+  display: none;
+  position: absolute;
+  padding: 5px 5px;
+  color: white;
+  background: rgb(33, 159, 255) none repeat scroll 0 0;
+  transition: all 0.3s ease;
+  padding: 15px;
+  width: 190px;
+  z-index: 999;
+}
+nav .nav-list .ul .a .b ul {
+  list-style-type: none;
+  width: 100%;
+}
+nav .nav-list .ul .a .b ul li {
+  padding: 5px 0;
+  border-top: 1px solid rgb(162, 149, 149);
+  width: 100%;
+}
+nav .nav-list .ul .a .b ul li:first-child {
+  border-top: none;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-icon {
+  display: none;
+  font-size: 30px;
+}
+
+#banner {
+  padding: 18px 0px;
+}
+#banner h1 {
+  font-size: 60px;
+}
+#banner p {
+  color: gray;
+  font-size: 30px;
+}
+#banner h2 {
+  color: rgb(23, 108, 255);
+}
+#banner .banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+#banner .banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 100px;
+  animation: beat 7s infinite alternate;
+}
+#banner .inputs {
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 10px 10px 5px lightblue;
+}
+#banner .inputs .cars {
+  padding: 40px 20px;
+}
+#banner .inputs div {
+  width: 1px;
+  height: 60px;
+  background-color: gray;
+}
+#banner button {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(43, 158, 240);
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  transition: all 0.5s linear;
+}
+#banner button:hover {
+  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+  color: rgb(0, 132, 255);
+}
+#banner select {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+#banner select option {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
