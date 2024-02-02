@@ -153,4 +153,282 @@ nav .nav-icon {
   height: 40px;
   border-radius: 10px;
   border: none;
+}
+
+#candidates {
+  padding: 20px 0px;
+}
+#candidates .blue-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  background-image: linear-gradient(rgba(15, 171, 255, 0.7), rgba(31, 169, 255, 0.7)), url(https://htmldesigntemplates.com/html/jobee/images/shape-1.png);
+  z-index: 1;
+  border-radius: 20px;
+}
+#candidates .blue-card .head8 {
+  display: flex;
+  flex-direction: column;
+}
+#candidates .blue-card .button button {
+  background-color: rgb(0, 140, 255);
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  border: none;
+  margin: 30px;
+  padding: 8px 20px;
+  color: white;
+  font-weight: 900;
+  transition: all 0.5s linear;
+}
+#candidates .blue-card .button button:hover {
+  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+  color: rgb(0, 132, 255);
+}
+#candidates .blue-card h1 {
+  font-size: 40px;
+  color: white;
+  padding: 30px;
+}
+#candidates .blue-card p {
+  font-size: 20px;
+  color: white;
+  padding: 30px;
+}
+
+#job-portal {
+  padding: 70px 0px;
+}
+#job-portal .portal {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+}
+#job-portal .portal .btn1 {
+  background-color: rgb(27, 134, 234);
+  color: white;
+  border: none;
+  border-radius: 17px;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 900;
+  transition: all 0.5s linear;
+}
+#job-portal .portal .btn1:hover {
+  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+  color: rgb(0, 132, 255);
+}
+#job-portal .portal .btn2 {
+  color: gray;
+  border: none;
+  border-radius: 17px;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 900;
+  transition: all 0.5s linear;
+}
+#job-portal .portal .btn2:hover {
+  box-shadow: inset 10rem 0 0 0 rgb(0, 145, 255), inset -10rem 0 0 0 rgb(0, 187, 255);
+  color: white;
+}
+#job-portal .portal h1 {
+  font-size: 40px;
+}
+#job-portal .portal p {
+  color: gray;
+  font-size: 20px;
+}
+
+#worker {
+  padding: 100px 0px;
+}
+#worker .worker {
+  background-color: rgb(182, 255, 255);
+  border-radius: 50px;
+}
+#worker img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#worker .experts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px;
+}
+#worker .experts h1 {
+  font-size: 40px;
+}
+#worker .experts h1 span {
+  color: rgb(8, 177, 255);
+}
+#worker .experts p {
+  color: gray;
+  font-size: 20px;
+}
+#worker .expert-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 30px;
+}
+
+#register {
+  padding: 100px 0px;
+}
+#register .find-job {
+  display: flex;
+  justify-content: space-around;
+}
+#register .find-job .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#register .find-job .btn {
+  display: flex;
+  gap: 20px;
+}
+#register .find-job button {
+  font-size: 20px;
+  background-color: rgb(8, 136, 255);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 900;
+  transition: all 0.5s linear;
+}
+#register .find-job button:hover {
+  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+  color: rgb(0, 132, 255);
+}
+#register .find-job span {
+  color: rgb(32, 113, 190);
+  font-size: 30px;
+}
+#register .find-job h1 {
+  font-size: 40px;
+}
+#register .find-job p {
+  font-size: 19px;
+  color: gray;
+}
+#register .find-job img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.small-cont {
+  display: flex;
+  justify-content: space-around;
+}
+.small-cont > div {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#registered-company {
+  padding: 100px 0px;
+}
+#registered-company .registered-company {
+  background-color: #cff3ff;
+  gap: 60px;
+}
+#registered-company .registered-company .company {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+#registered-company .registered-company .hd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#registered-company .registered-company .hd span {
+  color: #069cd0;
+}
+#registered-company .registered-company .hd h1 {
+  font-size: 50px;
+}
+#registered-company .registered-company .hd p {
+  color: gray;
+  font-size: 20px;
+}
+#registered-company .companies {
+  display: flex;
+  justify-content: space-around;
+}
+
+.works-card {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+#works {
+  padding: 100px 0px;
+}
+
+.small-worksc {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.small-worksc .a {
+  background-color: #03b4ef;
+}
+.small-worksc .b {
+  background-color: #8f0fd4;
+}
+.small-worksc .c {
+  background-color: #0541c2;
+}
+.small-worksc h1 {
+  font-size: 30px;
+  background-color: #c7f1ff;
+  padding: 40px 0;
+  border-radius: 20px;
+  position: relative;
+  text-align: end;
+  color: white;
+}
+.small-worksc .bi {
+  position: absolute;
+  font-size: 50px;
+  color: #069cd0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin-top: 90px;
+  margin-left: -10px;
+  padding: 10px 20px;
+}
+.small-worksc p {
+  font-size: 20px;
+}
+
+.works-demand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.works-demand .head3 {
+  text-align: center;
+}
+.works-demand .head3 h1 {
+  font-size: 50px;
+}
+.works-demand .head3 p {
+  font-size: 30px;
+  color: gray;
 }/*# sourceMappingURL=style.css.map */
