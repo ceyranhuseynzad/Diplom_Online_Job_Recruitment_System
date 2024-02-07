@@ -6,7 +6,7 @@
 }
 
 .contanier {
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 0 32px;
   margin: 0 auto;
 }
@@ -77,6 +77,28 @@ nav .nav-icon {
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  nav .nav-list {
+    display: none;
+  }
+  nav .nav-icon {
+    display: flex;
+  }
+  nav .bi {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  nav .nav-list {
+    display: none;
+  }
+  nav .nav-icon {
+    display: flex;
+  }
+  nav .bi {
+    font-size: 30px;
+  }
+}
 #banner {
   padding: 18px 0px;
 }
@@ -155,6 +177,50 @@ nav .nav-icon {
   border: none;
 }
 
+@media screen and (max-width: 768px) {
+  #banner .banner {
+    flex-direction: column;
+  }
+  #banner .banner .banner1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #banner .banner .banner1 .inputs {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  #banner .banner .banner1 .inputs button {
+    width: 100%;
+    padding-left: 40%;
+  }
+  #banner .banner .banner1 .inputs select {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #banner .banner {
+    flex-direction: column;
+  }
+  #banner .banner .banner1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #banner .banner .banner1 .inputs {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  #banner .banner .banner1 .inputs button {
+    width: 100%;
+    padding-left: 40%;
+  }
+  #banner .banner .banner1 .inputs select {
+    width: 100%;
+  }
+}
 #candidates {
   padding: 20px 0px;
 }
@@ -199,6 +265,26 @@ nav .nav-icon {
   padding: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .blue-card {
+    flex-direction: column;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .blue-card {
+    flex-direction: column;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #job-portal {
   padding: 70px 0px;
 }
@@ -242,6 +328,28 @@ nav .nav-icon {
   font-size: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .portal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .portal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
 #worker {
   padding: 100px 0px;
 }
@@ -279,6 +387,16 @@ nav .nav-icon {
   gap: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .expert-cards {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .expert-cards {
+    flex-direction: column;
+  }
+}
 #register {
   padding: 100px 0px;
 }
@@ -327,6 +445,18 @@ nav .nav-icon {
      object-fit: contain;
 }
 
+@media screen and (max-width: 768px) {
+  .find-job {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .find-job {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .small-cont {
   display: flex;
   justify-content: space-around;
@@ -433,6 +563,16 @@ nav .nav-icon {
   color: gray;
 }
 
+@media screen and (max-width: 768px) {
+  .works-card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .works-card {
+    flex-direction: column;
+  }
+}
 #most-demand {
   padding: 50px 0px;
 }
@@ -576,16 +716,62 @@ nav .nav-icon {
   color: rgb(71, 161, 245);
 }
 
-.small-cont {
+@media screen and (max-width: 768px) {
+  .feature-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .find {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .feature-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .feature-cards .demanding-card {
+    justify-content: space-around;
+  }
+  .find {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+#small-cont .cont {
   display: flex;
   justify-content: space-around;
+  gap: 60px;
 }
-.small-cont > div {
+#small-cont .cont > div {
   border: 1px solid gray;
   padding: 10px;
   border-radius: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .d-card {
   position: relative;
   overflow: hidden;
@@ -603,4 +789,257 @@ nav .nav-icon {
 }
 .d-card:hover::before {
   height: 100%;
+}
+
+.dev {
+  display: flex;
+  flex-direction: column;
+}
+.dev img {
+  widows: 200px;
+  height: 200px;
+  border-radius: 19px;
+  position: relative;
+}
+.dev .dev1 {
+  text-align: center;
+  font-size: 20px;
+}
+.dev .dev1 p {
+  color: gray;
+}
+.dev .dev1 h1 .spa {
+  color: #03b4ef;
+}
+.dev .dev2 {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+.dev .dev2 span {
+  color: white;
+  background-color: #0541c2;
+  border-radius: 15px;
+  position: absolute;
+  padding: 10px;
+  margin-top: 150px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.dev .dev-a {
+  display: flex;
+  flex-direction: column;
+  font-size: 23px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .dev2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .dev2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+footer {
+  padding: 60px 0px;
+  background-color: rgb(255, 255, 255);
+  color: gray;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+footer .footer h1 {
+  color: black;
+}
+footer .footer p {
+  font-size: 17px;
+  color: rgb(84, 81, 81);
+}
+footer .footer ul {
+  font-size: 18px;
+  color: rgb(84, 81, 81);
+}
+footer .footer .cities, footer .footer .categories {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .footer .job-board {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+footer .newsletter .bi {
+  font-size: 50px;
+  padding: 20px;
+}
+footer .footer-list {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .city-name {
+  width: 200px;
+}
+footer .new {
+  padding-bottom: 100px;
+}
+footer .subscribe {
+  display: flex;
+  justify-content: space-around;
+  width: 450px;
+  height: 40px;
+  background-color: rgb(15, 188, 251);
+  border-radius: 10px;
+}
+footer .subscribe .sub {
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+footer .subscribe input {
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .cities, .categories {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  .job-board {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .job-board {
+    flex-direction: column;
+  }
+  .newsletter, .cities, .categories {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+#clients {
+  padding: 60px 0;
+}
+#clients .carousel {
+  display: flex;
+  justify-content: space-around;
+}
+#clients .carousel .bibi {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+#clients .carousel .bi {
+  color: yellow;
+}
+#clients .carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  background-color: rgb(222, 222, 222);
+}
+#clients .carousel .item p {
+  font-size: 20px;
+}
+#clients .carousel img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+#sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #03b4ef;
+  color: white;
+}
+
+.category-form {
+  margin-top: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.category-form > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.category-form > div input {
+  width: 100%;
+  padding: 8px;
+}
+.category-form > div .symbol {
+  position: absolute;
+  font-size: 20px;
+  top: 8px;
+  left: 105%;
+  width: 100%;
+  height: 20px;
+  color: rgb(110, 110, 110);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.category-form > div .symbol p {
+  font-size: 12px;
+}
+.category-form > div .hidden {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.category-form #submit {
+  padding: 8px;
+  background-color: green;
+  cursor: pointer;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
