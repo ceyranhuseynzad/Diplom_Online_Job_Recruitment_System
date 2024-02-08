@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playpen Sans", cursive;
+  font-family: "Manrope", sans-serif;
 }
 
 .contanier {
@@ -26,10 +26,22 @@ nav {
   padding: 30px 0px;
 }
 nav .nav-list {
-  display: flex;
-  list-style-type: none;
-  gap: 50px;
   align-items: center;
+}
+nav .nav-list .log {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+nav .nav-list .log .lo {
+  padding-top: 10px;
+}
+nav .nav-list .log .loq {
+  background-color: #3474ff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
 }
 nav .nav-list .ul {
   display: flex;
@@ -103,22 +115,45 @@ nav .nav-icon {
   padding: 18px 0px;
 }
 #banner h1 {
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+  color: #17233e;
+  line-height: 1.34em;
+  letter-spacing: -1px;
   font-size: 60px;
 }
-#banner p {
+
+p {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+  color: #17233e;
+  line-height: 1.34em;
+  letter-spacing: -1px;
   color: gray;
-  font-size: 30px;
 }
-#banner h2 {
+
+h2 {
   color: rgb(23, 108, 255);
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  text-transform: capitalize;
+  margin: 0 0 1rem;
+  line-height: 1.34em;
+  letter-spacing: -1px;
 }
-#banner .banner {
+
+.banner {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 60px;
 }
-#banner .banner img {
+.banner img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -126,8 +161,9 @@ nav .nav-icon {
   margin-right: 100px;
   animation: beat 7s infinite alternate;
 }
-#banner .inputs {
-  width: 500px;
+
+.inputs {
+  width: 600px;
   height: 120px;
   border-radius: 10px;
   border: none;
@@ -137,17 +173,19 @@ nav .nav-icon {
   gap: 10px;
   box-shadow: 10px 10px 5px lightblue;
 }
-#banner .inputs .cars {
+.inputs .cars {
   padding: 40px 20px;
 }
-#banner .inputs div {
+.inputs div {
   width: 1px;
   height: 60px;
   background-color: gray;
 }
-#banner button {
-  width: 120px;
-  height: 50px;
+
+button {
+  margin: auto;
+  width: 260px;
+  height: 40px;
   border-radius: 10px;
   border: none;
   color: white;
@@ -155,22 +193,25 @@ nav .nav-icon {
   font-size: 15px;
   font-weight: 900;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: auto;
+  padding: 20px 10px;
+  margin: 10px auto;
+  margin-right: 10px;
   transition: all 0.5s linear;
 }
-#banner button:hover {
+button:hover {
   box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
   color: rgb(0, 132, 255);
 }
-#banner select {
+
+select {
   width: 200px;
   height: 40px;
   border-radius: 10px;
   border: none;
 }
-#banner select option {
+select option {
   width: 200px;
   height: 40px;
   border-radius: 10px;
@@ -414,17 +455,18 @@ nav .nav-icon {
   gap: 20px;
 }
 #register .find-job button {
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgb(8, 136, 255);
   color: white;
   border: none;
   border-radius: 30px;
-  padding: 10px;
-  font-weight: 900;
+  padding: 5px;
+  font-weight: 600;
+  width: 150px;
   transition: all 0.5s linear;
 }
 #register .find-job button:hover {
-  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+  box-shadow: inset 20rem 0 0 0 white, inset -20rem 0 0 0 white;
   color: rgb(0, 132, 255);
 }
 #register .find-job span {
@@ -508,57 +550,61 @@ nav .nav-icon {
 #works {
   padding: 100px 0px;
 }
-
-.small-worksc {
+#works .small-worksc {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 }
-.small-worksc .a {
+#works .small-worksc .head3 p {
+  font-size: 10px;
+}
+#works .small-worksc .a {
   background-color: #03b4ef;
 }
-.small-worksc .b {
+#works .small-worksc .b {
   background-color: #8f0fd4;
 }
-.small-worksc .c {
+#works .small-worksc .c {
   background-color: #0541c2;
 }
-.small-worksc h1 {
+#works .small-worksc h1 {
   font-size: 30px;
   background-color: #c7f1ff;
-  padding: 40px 0;
+  padding: 40px 5px;
   border-radius: 20px;
   position: relative;
   text-align: end;
   color: white;
 }
-.small-worksc .bi {
+#works .small-worksc p {
+  font-size: 10px;
+}
+#works .small-worksc .bi {
   position: absolute;
   font-size: 50px;
   color: #069cd0;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  margin-top: 90px;
-  margin-left: -10px;
+  margin-top: 80px;
+  margin-left: -60px;
   padding: 10px 20px;
 }
-.small-worksc p {
+#works .small-worksc p {
   font-size: 20px;
 }
-
-.works-demand {
+#works .works-demand {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
-.works-demand .head3 {
+#works .works-demand .head3 {
   text-align: center;
 }
-.works-demand .head3 h1 {
+#works .works-demand .head3 h1 {
   font-size: 50px;
 }
-.works-demand .head3 p {
+#works .works-demand .head3 p {
   font-size: 30px;
   color: gray;
 }
@@ -576,78 +622,77 @@ nav .nav-icon {
 #most-demand {
   padding: 50px 0px;
 }
-
-.most-demand {
+#most-demand .most-demand {
   padding: 40px;
   background-image: linear-gradient(to right, #ffffff, #e8f1ff, #bee7ff, #80e1ff, #12daeb);
 }
-
-.head2 {
+#most-demand .head2 {
   text-align: center;
 }
-.head2 p {
-  font-size: 30px;
+#most-demand .head2 p {
+  font-size: 20px;
   padding: 20px;
 }
-.head2 h1 {
+#most-demand .head2 h1 {
   padding: 20px;
   text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
 }
-
-.demanding-card {
+#most-demand .demanding-card {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.demanding-card .dc-card {
+#most-demand .demanding-card .dc-card {
   display: flex;
   justify-content: space-around;
   gap: 40px;
 }
-.demanding-card .d-card {
+#most-demand .demanding-card .d-card {
   width: 240px;
-  height: 250px;
+  height: 290px;
   background-color: white;
   border-radius: 30px;
+  padding: 10px 10px;
 }
 
 #featured-job {
   padding: 100px 0;
 }
-
-.features {
+#featured-job .features {
   display: flex;
   flex-direction: column;
 }
-.features .feature-cards {
+#featured-job .features .feature-cards {
   display: flex;
   justify-content: space-around;
 }
-.features .feature-cards .full {
+#featured-job .features .feature-cards .full {
   background-color: #8ddcf6;
   border-radius: 15px;
   padding: 5px;
 }
-.features .feature-cards .full p {
+#featured-job .features .feature-cards .full p {
   color: #03b4ef;
 }
-.features .feature-cards .private {
+#featured-job .features .feature-cards .private {
   background-color: rgb(188, 255, 188);
   border-radius: 15px;
   padding: 5px;
 }
-.features .feature-cards .private p {
+#featured-job .features .feature-cards .private p {
   color: green;
 }
-.features .feature-cards .urgent {
+#featured-job .features .feature-cards .urgent {
   background-color: rgb(220, 191, 139);
   border-radius: 15px;
   padding: 5px;
 }
-.features .feature-cards .urgent p {
+#featured-job .features .feature-cards .urgent p {
   color: orange;
 }
-.features .f-card {
+#featured-job .features .f-card {
   width: 350px;
   height: 370px;
   background-color: white;
@@ -659,7 +704,7 @@ nav .nav-icon {
   border: 1px solid gray;
   box-shadow: 10px 10px 5px lightblue;
 }
-.features .f-card .apply {
+#featured-job .features .f-card .apply {
   background-color: #2a6af3;
   border-radius: 10px;
   padding: 0 10px;
@@ -667,14 +712,14 @@ nav .nav-icon {
   color: white;
   transition: all 0.2s linear;
 }
-.features .f-card .apply:hover {
+#featured-job .features .f-card .apply:hover {
   box-shadow: inset 10rem 0 0 0 rgb(15, 162, 241), inset -10rem 0 0 0 rgb(0, 149, 255);
   color: white;
 }
-.features .f-card .apply p {
+#featured-job .features .f-card .apply p {
   color: white;
 }
-.features .f-card .bi {
+#featured-job .features .f-card .bi {
   color: #fafeff;
   font-size: 30px;
   background: #03b4ef;
@@ -682,36 +727,39 @@ nav .nav-icon {
   margin-top: 40px;
   border-radius: 10px;
 }
-.features .f-card span {
+#featured-job .features .f-card span {
   color: #8f0fd4;
 }
-.features .f-card p {
+#featured-job .features .f-card p {
   font-size: 20px;
   color: gray;
 }
-.features .f-card .fa, .features .f-card .fb, .features .f-card .fd {
+#featured-job .features .f-card .fa,
+#featured-job .features .f-card .fb,
+#featured-job .features .f-card .fd {
   display: flex;
   justify-content: space-around;
 }
-.features .find {
+#featured-job .features .find {
   display: flex;
   justify-content: space-around;
 }
-.features .find .sort {
+#featured-job .features .find .sort {
   display: flex;
   justify-content: space-around;
   gap: 10px;
 }
-.features .find .sort .s {
+#featured-job .features .find .sort .s {
   background-color: #069cd0;
   border-radius: 20px;
   height: 55px;
-  padding: 0 20px;
+  padding: 0 30px;
   font-weight: 900;
   color: white;
+  margin: auto;
   transition: all 0.5s linear;
 }
-.features .find .sort .s:hover {
+#featured-job .features .find .sort .s:hover {
   box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
   color: rgb(71, 161, 245);
 }
@@ -866,7 +914,8 @@ footer .footer ul {
   font-size: 18px;
   color: rgb(84, 81, 81);
 }
-footer .footer .cities, footer .footer .categories {
+footer .footer .cities,
+footer .footer .categories {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -924,7 +973,8 @@ footer .subscribe input {
   .footer {
     flex-direction: column;
   }
-  .cities, .categories {
+  .cities,
+  .categories {
     justify-content: flex-start;
     padding-left: 10px;
   }
@@ -936,7 +986,9 @@ footer .subscribe input {
   .job-board {
     flex-direction: column;
   }
-  .newsletter, .cities, .categories {
+  .newsletter,
+  .cities,
+  .categories {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -961,9 +1013,12 @@ footer .subscribe input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
   width: 300px;
-  height: 500px;
-  background-color: rgb(222, 222, 222);
+  height: 600px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  padding: 40px 40px;
 }
 #clients .carousel .item p {
   font-size: 20px;
@@ -1047,6 +1102,9 @@ footer .subscribe input {
 #about {
   padding: 10px 0;
 }
+#about .contanier {
+  width: 100%;
+}
 #about .about {
   width: 100%;
   display: flex;
@@ -1073,7 +1131,7 @@ footer .subscribe input {
   height: 300px;
 }
 
-.numbr {
+#numbr .numbr {
   display: flex;
   justify-content: space-between;
   gap: 70px;
@@ -1093,7 +1151,7 @@ footer .subscribe input {
   text-align: center;
 }
 #pages .pages .head p {
-  font-size: 25px;
+  font-size: 17px;
   color: gray;
   text-align: center;
 }
@@ -1106,13 +1164,27 @@ footer .subscribe input {
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-color: #2d76ff;
+  background-color: #528fff;
   color: white;
-  font-size: 20px;
+  padding-top: 80px;
+  font-size: 28px;
   width: 340px;
-  height: 600px;
-  gap: 30px;
+  height: 700px;
+  gap: 10px;
   border-radius: 15px;
+}
+#pages .pages .cards .card .bi {
+  font-size: 60px;
+  background-color: white;
+  color: #80e1ff;
+  border-radius: 15px;
+  width: 130px;
+  margin: auto;
+  padding: 10px;
+}
+#pages .pages .cards .card p {
+  color: white;
+  font-size: 15px;
 }
 #pages .pages .cards .card button {
   border: none;
@@ -1149,6 +1221,7 @@ footer .subscribe input {
   justify-content: space-between;
   border: 1px solid gray;
   background-color: #0541c2;
+  border-radius: 6px;
   color: white;
 }
 #newsletter .newsletter .button input {
@@ -1159,6 +1232,7 @@ footer .subscribe input {
   margin: 0 auto;
   text-align: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100px;
   background-color: #0541c2;
@@ -1267,7 +1341,9 @@ footer .subscribe input {
   font-size: 20px;
   color: gray;
 }
-#job .job .job1 .f-card .fa, #job .job .job1 .f-card .fb, #job .job .job1 .f-card .fd {
+#job .job .job1 .f-card .fa,
+#job .job .job1 .f-card .fb,
+#job .job .job1 .f-card .fd {
   display: flex;
   justify-content: space-around;
 }
@@ -1338,7 +1414,8 @@ footer .subscribe input {
   width: 500px;
   margin: auto;
 }
-#error .error .button .btn1, #error .error .button .btn2 {
+#error .error .button .btn1,
+#error .error .button .btn2 {
   color: white;
   background-color: #0541c2;
   border-radius: 28px;
@@ -1353,6 +1430,7 @@ footer .subscribe input {
 
 #about-cand {
   padding: 0 50px;
+  width: 100%;
 }
 #about-cand .about-cand {
   width: 100%;
