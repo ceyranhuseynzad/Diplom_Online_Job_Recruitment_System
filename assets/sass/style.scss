@@ -1294,3 +1294,463 @@ nav{
                 color: white;
         }
     }
+       //about
+  #about{
+    padding:  10px 0;
+    
+    .about{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        background:  url(https://htmldesigntemplates.com/html/jobee/images/shape-1.png);
+        background-color: #83ddfa;
+        .about1{
+            display: flex;
+            justify-content: center;
+            padding: 0 10px;
+            align-items: center;
+        }
+       
+        .about2{
+            background-repeat: no-repeat;
+            background-size: contain;
+            background: url(https://htmldesigntemplates.com/html/jobee/images/banner_ils.png);
+        }
+
+
+
+
+
+
+
+
+
+
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+  }
+
+    
+    .numbr{
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+        font-size: 40px;
+        padding: 20px;
+    }
+    #pages{
+        .pages{
+            display: flex;
+            flex-direction: column;
+          .head{
+            padding: 20px;
+            h1{
+                font-size: 40px;
+                text-align: center;
+            }
+            p{
+                font-size: 25px;
+                color: gray;
+                text-align: center;
+          
+            }
+          }
+            .cards{
+                display: flex;
+                justify-content: space-around;
+                gap: 40px;
+                
+                .card{
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    background-color: #2d76ff;
+                    color: white;
+                    font-size: 20px;
+                    width: 340px;
+                    height: 600px;
+                    gap: 30px;
+                    border-radius: 15px;
+                    button{
+                        border: none;
+                        color: white;
+                        border-radius: 10px;
+                        background-color: #0541c2;
+                        padding: 20px;
+                        width: 40%;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    #newsletter{
+        margin-top: 40px;
+        padding: 60px 0;
+        background-color: rgb(239, 239, 239);
+        .newsletter{
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+           
+            h1{
+                font-size:30px ;
+                color: #0541c2;
+
+            }
+            p{
+                font-size: 17px;
+                color: gray;
+            }
+            .button{
+                height: 50px;
+                width: 500px;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid gray;
+                background-color: #0541c2;
+                color: white;
+                input{
+                    border: none;
+                    width: 80%;
+
+                }
+                .subscribe{
+                    margin: 0 auto;
+                text-align: center;
+                display: flex;
+            
+
+                justify-content: center;
+                width: 100px;
+                background-color: #0541c2;
+                height: 100%;
+                
+                }
+            }
+        }
+    }
+    #job{
+        .job{
+            display: flex;
+            justify-content: space-around;
+            .inpt{
+                display: flex;
+                justify-content: space-around;
+                .inp{
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 2px;
+                    .bi{
+                        background-color: #0541c2;
+                        border-radius: 50%;
+                        color: white;
+                        font-size: 30px;
+                    }
+                    p{
+                        color: rgb(83, 166, 255);
+                    }
+                    select{
+                        border-radius: 15px;
+                    }
+                }
+            }
+            .job1{
+                display: flex;
+                flex-direction: column;
+               // background-color: red;
+                gap: 60px;
+                width: 90%;
+                .cards{
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 60px;
+                    
+                    .full{
+                        p{
+                            color: #03b4ef;
+                        }
+                        background-color: #8ddcf6;
+                        border-radius: 15px;
+                        padding: 5px;
+
+                    }
+                    .private{
+                        p{
+                            color: green;
+                        }
+                        background-color: rgb(188, 255, 188);
+                        border-radius: 15px;
+                        padding: 5px;
+
+                    }
+                    .urgent{
+                  p{
+                    color: orange;
+                  }
+                        background-color: rgb(220, 191, 139);
+                        border-radius: 15px;
+                        padding: 5px;
+
+                    }
+                }
+                .f-card{
+                    width: 350px;
+                    height: 370px;
+                    background-color:white;
+                    border-radius: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    padding-top: 20px;
+                    border: 1px solid gray;
+                    box-shadow: 10px 10px 5px lightblue;
+                
+                   
+                    .apply{
+                        background-color: #2a6af3;
+                       
+                        border-radius: 10px;
+                        padding: 0 10px ;
+                        font-weight: 900;
+                        color: white;
+                
+            
+              
+
+                        transition: all 0.2s linear;
+        
+                        &:hover {
+                            box-shadow: inset 10rem 0 0 0 rgb(15, 162, 241), inset -10rem 0 0 0 rgb(0, 149, 255);
+                            color: white;
+                        }
+                        p{
+                            color: white;
+                        }
+                    }
+                    .bi{
+                        color: #fafeff;
+                        font-size: 30px;
+                        background: #03b4ef;
+                        padding: 10px 20px ;
+                        margin-top: 40px;
+                        border-radius: 10px;
+                    }
+                    span{
+                        color: #8f0fd4;
+                    }
+                    p{
+                        font-size: 20px;
+                    
+                            color: gray;
+                      
+
+                    }
+                   
+                   .fa ,.fb,.fd{
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+                    
+                }
+              
+            }
+            .job2{
+                display: flex;
+                flex-direction: column;
+                //background-color: #8f0fd4;
+                .job-tips{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 80px;
+                }
+                .industry{
+                    background-color: #9dd6ea;
+                    border-radius: 20px;
+                    padding: 50px 50px;
+                    margin-left: 20px;
+                  
+                   
+
+                }
+                .salary{
+                    background-color: #a4e7fd;
+                    border-radius: 20px;
+                    padding: 50px 50px;
+                    margin-left: 20px;
+
+                }
+                .job-type{
+                    background-color: #9fe7ff;
+                    border-radius: 20px;
+                    padding: 50px 50px;
+                    margin-left: 20px;
+
+                }
+                .mini-card{
+                    background-color: #06266b;
+                    color: white;
+                    border-radius: 20px;
+                    padding: 50px 30px;
+                    margin: 20px;
+                    display: flex;
+                    justify-content: space-around;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                    button{
+                        background-color: #0541c2;
+                        color: white;
+                        border-radius: 15px;
+                        padding: 15px;
+                        border: none;
+
+                    }
+                }
+            }
+        }
+    
+
+                 
+                
+    #error{
+        .error{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            gap: 40px;
+            img{
+                width: 800px;
+                height: 600px;
+            //    display: flex;
+            //  justify-content: center;
+            //  align-items: center;
+             margin: auto;
+            }
+            .button{
+                display: flex;
+                justify-content: space-around;
+                width: 500px;
+                margin: auto;
+                .btn1,.btn2{
+                    color: white;
+                    background-color: #0541c2;
+                    border-radius: 28px;
+                    padding: 20px;
+                }
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 35px;
+            }
+        }
+    }
+    #about-cand{
+        padding: 0 50px;
+        
+        .about-cand{
+            width: 100%;
+            padding: 0 50px;
+            margin-bottom: 50px;
+            justify-content: space-between;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            background:  url(https://htmldesigntemplates.com/html/jobee/images/shape-1.png);
+            background-color: #83ddfa;
+
+            .about1{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                gap: 40px;
+                .h1{
+                    margin: auto;
+
+                }
+                .p{
+                    color: gray;
+                    margin: auto;
+                }
+                .banner1{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    gap: 60px;
+                   
+                
+                }
+               .inputs{
+                width: 500px;
+                //background-color: #0541c2;
+                height: 120px;
+                border-radius: 10px;
+                border: none;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 10px;
+                box-shadow: 10px 10px 5px  lightblue;
+                .cars{
+                    padding: 40px 20px;
+                }
+            
+                div{
+                    width: 1px;
+                    height: 60px;
+                   background-color:  gray;
+                  
+                }
+               }
+               button{
+                width: 120px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                color: white;
+                background-color: rgb(43, 158, 240);
+                font-size: 15px;
+                font-weight: 900;
+                display: flex;
+                align-items: center;
+                padding: 20px;
+                margin: auto;
+                            
+                        
+                          
+            
+                transition: all 0.5s linear;
+            
+                &:hover {
+                    box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+                    color: rgb(0, 132, 255);
+                }
+               }
+               select{
+                width: 200px;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                option{
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: none;
+                }
+               }
+            }
+
+        }
+    }

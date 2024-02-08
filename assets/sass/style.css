@@ -1042,4 +1042,395 @@ footer .subscribe input {
   background-color: green;
   cursor: pointer;
   color: white;
+}
+
+#about {
+  padding: 10px 0;
+}
+#about .about {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background: url(https://htmldesigntemplates.com/html/jobee/images/shape-1.png);
+  background-color: #83ddfa;
+}
+#about .about .about1 {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  align-items: center;
+}
+#about .about .about2 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background: url(https://htmldesigntemplates.com/html/jobee/images/banner_ils.png);
+}
+#about .about img {
+  width: 300px;
+  height: 300px;
+}
+
+.numbr {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  font-size: 40px;
+  padding: 20px;
+}
+
+#pages .pages {
+  display: flex;
+  flex-direction: column;
+}
+#pages .pages .head {
+  padding: 20px;
+}
+#pages .pages .head h1 {
+  font-size: 40px;
+  text-align: center;
+}
+#pages .pages .head p {
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+}
+#pages .pages .cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+#pages .pages .cards .card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #2d76ff;
+  color: white;
+  font-size: 20px;
+  width: 340px;
+  height: 600px;
+  gap: 30px;
+  border-radius: 15px;
+}
+#pages .pages .cards .card button {
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #0541c2;
+  padding: 20px;
+  width: 40%;
+  margin: auto;
+}
+
+#newsletter {
+  margin-top: 40px;
+  padding: 60px 0;
+  background-color: rgb(239, 239, 239);
+}
+#newsletter .newsletter {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+#newsletter .newsletter h1 {
+  font-size: 30px;
+  color: #0541c2;
+}
+#newsletter .newsletter p {
+  font-size: 17px;
+  color: gray;
+}
+#newsletter .newsletter .button {
+  height: 50px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  background-color: #0541c2;
+  color: white;
+}
+#newsletter .newsletter .button input {
+  border: none;
+  width: 80%;
+}
+#newsletter .newsletter .button .subscribe {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  background-color: #0541c2;
+  height: 100%;
+}
+
+#job .job {
+  display: flex;
+  justify-content: space-around;
+}
+#job .job .inpt {
+  display: flex;
+  justify-content: space-around;
+}
+#job .job .inpt .inp {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+}
+#job .job .inpt .inp .bi {
+  background-color: #0541c2;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+#job .job .inpt .inp p {
+  color: rgb(83, 166, 255);
+}
+#job .job .inpt .inp select {
+  border-radius: 15px;
+}
+#job .job .job1 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 90%;
+}
+#job .job .job1 .cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+#job .job .job1 .cards .full {
+  background-color: #8ddcf6;
+  border-radius: 15px;
+  padding: 5px;
+}
+#job .job .job1 .cards .full p {
+  color: #03b4ef;
+}
+#job .job .job1 .cards .private {
+  background-color: rgb(188, 255, 188);
+  border-radius: 15px;
+  padding: 5px;
+}
+#job .job .job1 .cards .private p {
+  color: green;
+}
+#job .job .job1 .cards .urgent {
+  background-color: rgb(220, 191, 139);
+  border-radius: 15px;
+  padding: 5px;
+}
+#job .job .job1 .cards .urgent p {
+  color: orange;
+}
+#job .job .job1 .f-card {
+  width: 350px;
+  height: 370px;
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 20px;
+  border: 1px solid gray;
+  box-shadow: 10px 10px 5px lightblue;
+}
+#job .job .job1 .f-card .apply {
+  background-color: #2a6af3;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-weight: 900;
+  color: white;
+  transition: all 0.2s linear;
+}
+#job .job .job1 .f-card .apply:hover {
+  box-shadow: inset 10rem 0 0 0 rgb(15, 162, 241), inset -10rem 0 0 0 rgb(0, 149, 255);
+  color: white;
+}
+#job .job .job1 .f-card .apply p {
+  color: white;
+}
+#job .job .job1 .f-card .bi {
+  color: #fafeff;
+  font-size: 30px;
+  background: #03b4ef;
+  padding: 10px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+#job .job .job1 .f-card span {
+  color: #8f0fd4;
+}
+#job .job .job1 .f-card p {
+  font-size: 20px;
+  color: gray;
+}
+#job .job .job1 .f-card .fa, #job .job .job1 .f-card .fb, #job .job .job1 .f-card .fd {
+  display: flex;
+  justify-content: space-around;
+}
+#job .job2 {
+  display: flex;
+  flex-direction: column;
+}
+#job .job2 .job-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+#job .job2 .industry {
+  background-color: #9dd6ea;
+  border-radius: 20px;
+  padding: 50px 50px;
+  margin-left: 20px;
+}
+#job .job2 .salary {
+  background-color: #a4e7fd;
+  border-radius: 20px;
+  padding: 50px 50px;
+  margin-left: 20px;
+}
+#job .job2 .job-type {
+  background-color: #9fe7ff;
+  border-radius: 20px;
+  padding: 50px 50px;
+  margin-left: 20px;
+}
+#job .job2 .mini-card {
+  background-color: #06266b;
+  color: white;
+  border-radius: 20px;
+  padding: 50px 30px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+#job .job2 .mini-card img {
+  width: 100px;
+  height: 100px;
+}
+#job .job2 .mini-card button {
+  background-color: #0541c2;
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+}
+
+#error .error {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  gap: 40px;
+}
+#error .error img {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+}
+#error .error .button {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin: auto;
+}
+#error .error .button .btn1, #error .error .button .btn2 {
+  color: white;
+  background-color: #0541c2;
+  border-radius: 28px;
+  padding: 20px;
+}
+#error .error h1 {
+  font-size: 40px;
+}
+#error .error p {
+  font-size: 35px;
+}
+
+#about-cand {
+  padding: 0 50px;
+}
+#about-cand .about-cand {
+  width: 100%;
+  padding: 0 50px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background: url(https://htmldesigntemplates.com/html/jobee/images/shape-1.png);
+  background-color: #83ddfa;
+}
+#about-cand .about-cand .about1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 40px;
+}
+#about-cand .about-cand .about1 .h1 {
+  margin: auto;
+}
+#about-cand .about-cand .about1 .p {
+  color: gray;
+  margin: auto;
+}
+#about-cand .about-cand .about1 .banner1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+#about-cand .about-cand .about1 .inputs {
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 10px 10px 5px lightblue;
+}
+#about-cand .about-cand .about1 .inputs .cars {
+  padding: 40px 20px;
+}
+#about-cand .about-cand .about1 .inputs div {
+  width: 1px;
+  height: 60px;
+  background-color: gray;
+}
+#about-cand .about-cand .about1 button {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(43, 158, 240);
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  transition: all 0.5s linear;
+}
+#about-cand .about-cand .about1 button:hover {
+  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+  color: rgb(0, 132, 255);
+}
+#about-cand .about-cand .about1 select {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+#about-cand .about-cand .about1 select option {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
