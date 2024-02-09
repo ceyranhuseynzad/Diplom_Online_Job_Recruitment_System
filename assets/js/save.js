@@ -1,19 +1,19 @@
-let BASE_URL = `http://localhost:3000/save`;
-let cards = document.querySelector(".f-cards");
-let searchInput = document.querySelector(".search");
-let sortBtn = document.querySelector(".sort");
-let sorted = "asc";
+
+let cards = document.querySelector(".feature-cards");
+
+
 let filteredArr = [];
 let copyArr = [];
 
 async function getAllCards() {
-  let res = await axios(BASE_URL);
+  let res = await axios(`http://localhost:3000/save`);
   let data = res.data;
   copyArr = data;
   cards.innerHTML = "";
-  filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
+  // filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr.forEach((el) => {
     cards.innerHTML += `
+    <div class="f-cards">
     <div class="fa">
     <div class="icon"><i class="bi bi-globe"></i></div>
     <div class="cop"><p>Linkedin</p></div>
@@ -24,11 +24,11 @@ async function getAllCards() {
     <div class="urgent"><p>Urgent</p></div>
   </div>
   <div class="fc">
-    <h1>${data.hh}</h1>
-    <p>${data.pi}</p>
+    <h1>${el.hh}</h1>
+    <p>${el.pi}</p>
   </div>
   <div class="fd">
-    <div class="cash"><p><span>${data.price} </span>|hr</p></div>
+    <div class="cash"><p><span>${el.price} </span>|hr</p></div>
     <div class="apply"><p>Apply</p></div>
   </div>
             <button >LEARN MORE</button>
@@ -40,42 +40,22 @@ async function getAllCards() {
           </div>
         </div>
       </div>
+      </div>
         `;
   });
 }
 getAllCards();
 
-searchInput.addEventListener("input", function (e) {
-  filteredArr = copyArr;
-  filteredArr = filteredArr.filter((el) =>
-    el.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
-  );
-  getAllCards();
-});
 
-sortBtn.addEventListener("click", function () {
-  if (sorted === "asc") {
-    filteredArr.sort((a, b) => a.price - b.price);
-    sorted = "dsc";
-    sortBtn.innerHTML = "SORT ASC";
-  } else if (sorted === "dsc") {
-    filteredArr.sort((a, b) => b.price - a.price);
-    sorted = "def";
-    sortBtn.innerHTML = "SORT DSC";
-  } else {
-    filteredArr = copyArr;
-    sorted = "asc";
-    sortBtn.innerHTML = "SORT";
-  }
-  getAllCards();
-});
+
+
 
 function deleteBtn(id) {
-  axios.delete(`${BASE_URL}/${id}`);
+  axios.delete(`http://localhost:3000/save/${id}`);
 }
 
 async function addFav(cardId) {
-  let res = await axios(`${BASE_URL}/${cardId}`);
+  let res = await axios(`http://localhost:3000/save/${cardId}`);
   let obj = await res.data;
   axios.post(`http://localhost:3000/save`, obj);
 }

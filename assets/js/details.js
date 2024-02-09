@@ -1,10 +1,11 @@
 let id = new URLSearchParams(window.location.search).get("id");
-let cards = document.querySelector(".cards");
+let cards = document.querySelector(".feature-cards");
 
 async function getAllCards() {
   let res = await axios(`http://localhost:3000/all/${id}`);
   let data = await res.data;
   cards.innerHTML = `
+  <div class="f-cards">
   <div class="fa">
   <div class="icon"><i class="bi bi-globe"></i></div>
   <div class="cop"><p>Linkedin</p></div>
@@ -21,6 +22,7 @@ async function getAllCards() {
 <div class="fd">
   <div class="cash"><p><span>${data.price} </span>|hr</p></div>
   <div class="apply"><p>Apply</p></div>
+  </div>
 </div>`
     ;
 }

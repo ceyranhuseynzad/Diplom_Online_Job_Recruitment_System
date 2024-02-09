@@ -1,20 +1,39 @@
-let cards = document.querySelector(".cards");
-let searchInput = document.querySelector(".search");
-let sortBtn = document.querySelector(".sort");
-let loadMore = document.querySelector(".loadmore");
+let cards = document.querySelector(".feature-cards");
+const filteredbuttons=document.querySelector(".s");
+let filteredcard=document.querySelector(".f-card");
+console.log(filteredbuttons);
+
+
+// let loadMore = document.querySelector(".loadmore");
 let maxlength = 3;
-let sorted = "descending";
+
 let filteredArr = [];
 let copyArr = [];
+// const filteredCard =e=> {
+//   document.querySelector(".active").classList.remove("active")
+//   e.target.classList.add("active");
+//   filteredcard.forEach(card=>{
+//     card.classList.add("hide");
+   
+//     if(card.dataset.name===e.target.dataset.name||e.target.dataset.name==="all"){
+//       card.classList.remove("hide");
+//     }
+
+//   });
+
+// };
+// filteredbuttons.forEach(button=>button.addEventListener("click",filteredCard));
 
 async function getAllCards() {
   let res = await axios("http://localhost:3000/all");
   let data = await res.data;
   copyArr = data;
   cards.innerHTML = "";
-  filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
+  // filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
+  filteredArr=data;
   filteredArr.slice(0, maxlength).forEach((el) => {
     cards.innerHTML += `
+    <div class=f-card>
     <div class="fa">
     <div class="icon"><i class="bi bi-globe"></i></div>
     <div class="cop"><p>Linkedin</p></div>
@@ -25,11 +44,11 @@ async function getAllCards() {
     <div class="urgent"><p>Urgent</p></div>
   </div>
   <div class="fc">
-    <h1>${data.hh}</h1>
-    <p>${data.pi}</p>
+    <h1>${el.hh}</h1>
+    <p>${el.pi}</p>
   </div>
   <div class="fd">
-    <div class="cash"><p><span>${data.price} </span>|hr</p></div>
+    <div class="cash"><p><span>${el.price} </span>|hr</p></div>
     <div class="apply"><p>Apply</p></div>
   </div>
             <a  href="./details.html?id=${el.id}" >LEARN MORE</a>
@@ -41,35 +60,15 @@ async function getAllCards() {
           </div>
         </div>
       </div>
+      </div>
         `;
   });
 }
 getAllCards();
 
-searchInput.addEventListener("input", function (e) {
-  filteredArr = copyArr;
-  filteredArr = filteredArr.filter((el) =>
-    el.title.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
-  );
-  getAllCards();
-});
 
-sortBtn.addEventListener("click", function () {
-  if (sorted === "ascending") {
-    filteredArr.sort((a, b) => b.price - a.price);
-    sorted = "descending";
-    sortBtn.innerHTML = "SORT ASC";
-  } else if (sorted === "descending") {
-    filteredArr.sort((a, b) => a.price - b.price);
-    sorted = "def";
-    sortBtn.innerHTML = "SORT DSC";
-  } else {
-    filteredArr=copyArr
-    sorted = "ascending";
-    sortBtn.innerHTML = "SORT";
-  }
-  getAllCards();
-});
+
+
 
 function deleteBtn(id) {
   axios.delete(`http://localhost:3000/all/${id}`);
@@ -82,7 +81,7 @@ async function addFav(cardId) {
   axios.post(`http://localhost:3000/save`, obj);
 }
 
-loadMore.addEventListener("click", function () {
-  maxlength = maxlength + 3;
-  getAllCards();
-})
+// loadMore.addEventListener("click", function () {
+//   maxlength = maxlength + 3;
+//   getAllCards();
+// })
