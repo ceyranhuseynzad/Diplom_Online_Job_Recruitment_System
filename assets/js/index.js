@@ -50,14 +50,19 @@ async function getAllCards() {
   <div class="fd">
     <div class="cash"><p><span>${el.price} </span>|hr</p></div>
     <div class="apply"><p>Apply</p></div>
-  </div>
-            <a  href="./details.html?id=${el.id}" >LEARN MORE</a>
-            <div>
-              <a onclick=deleteBtn(${el.id}) >DELETE</a>
-              <a onclick="editBtn(${el.id})" href="./add.html?id=${el.id}">EDİT</a>
-              <a onclick="addFav(${el.id})"  >ADD FAV</a>
-            </div>
+
+  
           </div>
+          <div class="ft">
+          <a  href="./details.html?id=${el.id}" class="btn btn-primary" style=" width:250px;margin:auto;"  >LEARN MORE</a>
+          <div style="margin:auto; display: flex;
+          justify-content: space-around; gap:20px; padding-top:10px; ">
+            <a onclick=deleteBtn(${el.id}) class="btn btn-danger" >DELETE</a>
+            <a onclick="editBtn(${el.id})" class="btn btn-secondary "href="./add.html?id=${el.id}">EDİT</a>
+            <a onclick="addFav(${el.id})" class="btn btn-dark" >ADD FAV</a>
+          </div>
+          </div>
+</div>
         </div>
       </div>
       </div>

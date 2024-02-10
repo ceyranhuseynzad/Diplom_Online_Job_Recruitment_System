@@ -444,11 +444,13 @@ select option {
 #register .find-job {
   display: flex;
   justify-content: space-around;
+  gap: 60px;
 }
 #register .find-job .text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 70%;
 }
 #register .find-job .btn {
   display: flex;
@@ -514,12 +516,26 @@ select option {
 }
 #registered-company .registered-company {
   background-color: #cff3ff;
+  width: 100%;
+  padding: 40px;
   gap: 60px;
 }
 #registered-company .registered-company .company {
   display: flex;
   justify-content: space-around;
   gap: 30px;
+}
+#registered-company .registered-company .company-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  border-radius: 10px;
+}
+#registered-company .registered-company .company-card img {
+  width: 90px;
+  height: 90px;
 }
 #registered-company .registered-company .hd {
   display: flex;
@@ -560,15 +576,18 @@ select option {
 }
 #works .small-worksc .a {
   background-color: #03b4ef;
+  width: 290px;
 }
 #works .small-worksc .b {
   background-color: #8f0fd4;
+  width: 290px;
 }
 #works .small-worksc .c {
   background-color: #0541c2;
+  width: 290px;
 }
 #works .small-worksc h1 {
-  font-size: 30px;
+  font-size: 20px;
   background-color: #c7f1ff;
   padding: 40px 5px;
   border-radius: 20px;
@@ -583,10 +602,10 @@ select option {
   position: absolute;
   font-size: 50px;
   color: #069cd0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 241, 210);
   border-radius: 20px;
-  margin-top: 80px;
-  margin-left: -60px;
+  margin-top: 40px;
+  margin-left: -10px;
   padding: 10px 20px;
 }
 #works .small-worksc p {
@@ -624,7 +643,7 @@ select option {
 }
 #most-demand .most-demand {
   padding: 40px;
-  background-image: linear-gradient(to right, #ffffff, #e8f1ff, #bee7ff, #80e1ff, #12daeb);
+  background-color: #b4eeff;
 }
 #most-demand .head2 {
   text-align: center;
@@ -636,7 +655,7 @@ select option {
 #most-demand .head2 h1 {
   padding: 20px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: capitalize;
 }
 #most-demand .demanding-card {
@@ -655,6 +674,16 @@ select option {
   background-color: white;
   border-radius: 30px;
   padding: 10px 10px;
+  margin: auto;
+}
+#most-demand .demanding-card .d-card p {
+  font-size: 15px;
+}
+#most-demand .demanding-card .d-card h1 {
+  font-size: 30px;
+}
+#most-demand .demanding-card .d-card:hover {
+  background-color: rgba(17, 170, 247, 0.807);
 }
 
 #featured-job {
@@ -694,7 +723,7 @@ select option {
 }
 #featured-job .features .f-card {
   width: 350px;
-  height: 370px;
+  height: 470px;
   background-color: white;
   border-radius: 24px;
   display: flex;
@@ -733,6 +762,10 @@ select option {
 #featured-job .features .f-card p {
   font-size: 20px;
   color: gray;
+}
+#featured-job .features .f-card .ft {
+  display: flex;
+  flex-direction: column;
 }
 #featured-job .features .f-card .fa,
 #featured-job .features .f-card .fb,
@@ -820,25 +853,6 @@ select option {
     align-items: center;
   }
 }
-.d-card {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  color: black;
-}
-.d-card::before {
-  content: "";
-  position: absolute;
-  background-color: #217dff;
-  opacity: 0.9;
-  width: 100%;
-  height: 0;
-  transition: all 0.5s ease-in-out;
-}
-.d-card:hover::before {
-  height: 100%;
-}
-
 .dev {
   display: flex;
   flex-direction: column;
@@ -1021,12 +1035,15 @@ footer .subscribe input {
   padding: 40px 40px;
 }
 #clients .carousel .item p {
-  font-size: 20px;
+  font-size: 19px;
+}
+#clients .carousel .item h1 {
+  font-size: 25px;
 }
 #clients .carousel img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1097,6 +1114,9 @@ footer .subscribe input {
   background-color: green;
   cursor: pointer;
   color: white;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 #about {
@@ -1136,7 +1156,18 @@ footer .subscribe input {
   justify-content: space-between;
   gap: 70px;
   font-size: 40px;
-  padding: 20px;
+  padding: 40px;
+}
+#numbr .numbr .n {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+#numbr .numbr .bi {
+  background-color: #8f0fd4;
+  color: white;
+  border-radius: 10px;
+  padding: 13px;
 }
 
 #pages .pages {
