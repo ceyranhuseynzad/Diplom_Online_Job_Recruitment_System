@@ -1542,4 +1542,53 @@ footer .subscribe input {
   height: 40px;
   border-radius: 10px;
   border: none;
+}
+
+.f-crd {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #03b4ef;
+  padding: 10px 40px;
+}
+.f-crd p {
+  font-size: 16px;
+}
+.f-crd .p {
+  background-color: rgb(202, 197, 197);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 0 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.f-crd img {
+  border-radius: 10px;
+  width: 130px;
+  height: 130px;
+}
+.f-crd .fa, .f-crd .fc {
+  margin: auto;
+  text-align: center;
+}
+.f-crd .f-b, .f-crd .fd {
+  display: flex;
+  justify-content: space-around;
+  font-size: smaller;
+}
+.f-crd .bi-star-fill {
+  color: yellow;
+}
+.f-crd .apply1 {
+  margin: auto;
+  background-color: #0541c2;
+  border-radius: 15px;
+  color: white;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+.f-crd .apply1 p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

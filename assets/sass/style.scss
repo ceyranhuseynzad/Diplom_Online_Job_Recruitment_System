@@ -2092,3 +2092,59 @@ footer {
 
     }
 }
+//candidate
+.f-crd{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border:3px solid #03b4ef;
+    padding: 10px 40px;
+p{
+    font-size: 16px;
+
+
+}
+.p{
+    background-color: rgb(202, 197, 197);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding:  0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+    img{
+        border-radius: 10px;
+        width: 130px;
+        height: 130px;
+    }
+    .fa,.fc{
+        margin: auto;
+        text-align: center;
+    }
+    .f-b,.fd{
+        display: flex;
+        justify-content: space-around;
+        font-size: smaller;
+    }
+    .bi-star-fill{
+        color: yellow;
+    }
+   
+    .apply1{
+        
+        margin: auto;
+        background-color: #0541c2;
+        border-radius: 15px;
+        color: white;
+        padding: 0 10px;
+        padding-top: 10px;
+       
+        p{
+            color: white;
+        }
+    }
+
+}

@@ -13,6 +13,16 @@ axios(`http://localhost:3000/all/${id}`).then((res) => {
 
   addBtn.innerHTML = "EDIT";
 });
+photoInput.addEventListener('input', (e) => {
+  let file = e.target.files[0];
+  if (file) {
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function () {
+      roundedImage.src = reader.result;
+    }
+  }
+})
 
 
 
