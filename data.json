@@ -4,12 +4,66 @@
       "id": 1,
       "hh": "Sales Manager",
       "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
-      "price": "$50-$600",
-      "title": "undefined",
-      "about": "undefined"
+      "price": "$50-$600"
+    },
+    {
+      "id": 2,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
     },
     {
       "id": 3,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60",
+      "title": "n00",
+      "about": "hello"
+    },
+    {
+      "id": 4,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
+    },
+    {
+      "id": 5,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
+    }
+  ],
+  "canditate": [
+    {
+      "id": 1,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$600",
+      "img": "https://htmldesigntemplates.com/html/jobee/images/reviewer/2.jpg"
+    },
+    {
+      "id": 2,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$600",
+      "img": "https://htmldesigntemplates.com/html/jobee/images/reviewer/2.jpg"
+    },
+    {
+      "id": 3,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$600",
+      "img": "https://htmldesigntemplates.com/html/jobee/images/reviewer/2.jpg"
+    },
+    {
+      "id": 4,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$600",
+      "img": "https://htmldesigntemplates.com/html/jobee/images/reviewer/2.jpg"
+    },
+    {
+      "id": 5,
       "hh": "Sales Manager",
       "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
       "price": "$50-$60"
@@ -18,7 +72,19 @@
       "id": 4
     }
   ],
-
+  "employers": [
+    {
+      "id": 1,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$600",
+      "title": "undefined",
+      "about": "undefined"
+    },
+    {
+      "id": 4
+    }
+  ],
   "find": [
     {
       "id": 1,
@@ -50,6 +116,40 @@
       "hh": "Sales Manager",
       "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
       "price": "$50-$60"
+    },
+    {
+      "id": 4
+    }
+  ],
+  "save2": [
+    {
+      "id": 1,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
+    },
+    {
+      "id": 3,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
+    }
+  ],
+  "save3": [
+    {
+      "id": 1,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
+    },
+    {
+      "id": 3,
+      "hh": "Sales Manager",
+      "pi": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "price": "$50-$60"
+    },
+    {
+      "id": 4
     }
   ],
   "main": [

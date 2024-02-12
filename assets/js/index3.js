@@ -1,7 +1,7 @@
 
-                            let cards = document.querySelector(".cards");
+let cards = document.querySelector(".cards");
 const filteredbuttons=document.querySelector(".s");
-let filteredcard=document.querySelector(".f-card");
+let filteredcard=document.querySelector(".f-crd");
 console.log(filteredbuttons);
 
 
@@ -26,7 +26,7 @@ let copyArr = [];
 // filteredbuttons.forEach(button=>button.addEventListener("click",filteredCard));
 
 async function getAllCards() {
-  let res = await axios("http://localhost:3000/find");
+  let res = await axios("http://localhost:3000/employers");
   let data = await res.data;
   copyArr = data;
   cards.innerHTML = "";
@@ -35,7 +35,7 @@ async function getAllCards() {
   filteredArr.slice(0, maxlength).forEach((el) => {
     cards.innerHTML += `
  
-    <div class="f-crd">
+    <div class="f-crd" sytle=" height:400px;">
     <div class="fa">
       <img src="https://htmldesigntemplates.com/html/jobee/images/icons/1.png" alt="">
     </div>
@@ -61,22 +61,23 @@ async function getAllCards() {
        
     </div>
     <div class="fd">
-        <div class="apply1">
+        <div class="apply1" >
             <p>18 Job Open</p>
         </div>
        
       
     </div>
+    <div class="ft" >
+    <a  href="./details.html?id=${el.id}" class="btn btn-primary" style=" width:250px;margin:auto;"  >LEARN MORE</a>
+    <div style="margin:auto; display: flex;
+    justify-content: space-around; gap:20px; padding-top:10px; ">
+      <a onclick="deleteBtn(${el.id})" class="btn btn-danger" >DELETE</a>
+      <a onclick="editBtn(${el.id})" class="btn btn-secondary "href="./add.html?id=${el.id}">EDİT</a>
+      <a onclick="addFav(${el.id})" class="btn btn-dark" >ADD FAV</a>
+    </div>
+    </div>
 </div>
-          <div class="ft">
-          <a  href="./details.html?id=${el.id}" class="btn btn-primary" style=" width:250px;margin:auto;"  >LEARN MORE</a>
-          <div style="margin:auto; display: flex;
-          justify-content: space-around; gap:20px; padding-top:10px; ">
-            <a onclick=deleteBtn(${el.id}) class="btn btn-danger" >DELETE</a>
-            <a onclick="editBtn(${el.id})" class="btn btn-secondary "href="./add.html?id=${el.id}">EDİT</a>
-            <a onclick="addFav(${el.id})" class="btn btn-dark" >ADD FAV</a>
-          </div>
-          </div>
+     
 </div>
         </div>
       </div>
@@ -94,14 +95,14 @@ getAllCards();
 
 
 function deleteBtn(id) {
-  axios.delete(`http://localhost:3000/all/${id}`);
+  axios.delete(`http://localhost:3000/employers/${id}`);
   window.location.reload()
 }
 
 async function addFav(cardId) {
-  let res = await axios(`http://localhost:3000/all/${cardId}`);
+  let res = await axios(`http://localhost:3000/employers/${cardId}`);
   let obj = await res.data;
-  axios.post(`http://localhost:3000/save`, obj);
+  axios.post(`http://localhost:3000/save3`, obj);
 }
 
 // loadMore.addEventListener("click", function () {

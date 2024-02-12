@@ -35,7 +35,7 @@ async function getAllCards() {
     cards.innerHTML += `
  
    
-    <div class="f-card">
+    <div class=f-card style="height:560px;">
     <div class="fa">
     <div class="icon"><i class="bi bi-globe"></i></div>
     <div class="cop"><p>Linkedin</p></div>
@@ -68,6 +68,7 @@ async function getAllCards() {
         </div>
       </div>
       </div>
+       
 
      
     
@@ -81,12 +82,12 @@ getAllCards();
 
 
 function deleteBtn(id) {
-  axios.delete(`http://localhost:3000/all/${id}`);
+  axios.delete(`http://localhost:3000/find/${id}`);
   window.location.reload()
 }
 
 async function addFav(cardId) {
-  let res = await axios(`http://localhost:3000/all/${cardId}`);
+  let res = await axios(`http://localhost:3000/find/${cardId}`);
   let obj = await res.data;
   axios.post(`http://localhost:3000/save`, obj);
 }

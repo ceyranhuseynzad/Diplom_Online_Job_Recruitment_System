@@ -1,6 +1,6 @@
 
 let cards = document.querySelector(".feature-cards");
-let BASE_URL = `http://localhost:3000/favorites`;
+let BASE_URL = `http://localhost:3000/save`;
 
 
 let filteredArr = [];
@@ -8,7 +8,7 @@ let copyArr = [];
 
 async function getAllCards() {
   let res = await axios(BASE_URL);
-  let data = await res.data;
+  let data =  res.data;
   copyArr = data;
   cards.innerHTML = "";
   // filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
@@ -61,8 +61,8 @@ function deleteBtn(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
 
-async function addFav(cardId) {
-  let res = await axios(`${BASE_URL}/${cardId}`);
-  let obj = await res.data;
-  axios.post(`http://localhost:3000/save`, obj);
-}
+// async function addFav(cardId) {
+//   let res = await axios(`${BASE_URL}/${cardId}`);
+//   let obj = await res.data;
+//   axios.post(`${BASE_URL}`, obj);
+// }

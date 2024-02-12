@@ -1,30 +1,42 @@
 let id = new URLSearchParams(window.location.search).get("id");
-let cards = document.querySelector(".feature-cards");
+let cards = document.querySelector(".cards");
 
 async function getAllCards() {
   let res = await axios(`http://localhost:3000/all/${id}`);
   let data = await res.data;
   cards.innerHTML = `
-  <div class=f-card>
+  <div class="f-crd" sytle=" height:400px;">
   <div class="fa">
-  <div class="icon"><i class="bi bi-globe"></i></div>
-  <div class="cop"><p>Linkedin</p></div>
-</div>
-<div class="fb">
-  <div class="full"><p>Fulltime</p></div>
-  <div class="private"><p>Private</p></div>
-  <div class="urgent"><p>Urgent</p></div>
-</div>
-<div class="fc">
-  <h1>${data.hh}</h1>
-  <p>${data.pi}</p>
-</div>
-<div class="fd">
-  <div class="cash"><p><span>${data.price} </span>|hr</p></div>
-  <div class="apply"><p>Apply</p></div>
+    <img src="https://htmldesigntemplates.com/html/jobee/images/icons/1.png" alt="">
+  </div>
 
-
-        </div>
+  <div class="fc">
+      <h1>LinkedIn</h1>
+      <span>Full Stack Engineer</span>
+      <div class="bibi">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+      </div>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+  </div>
+  <div class="f-b">
+      <div class="t">
+          <p><i class="bi bi-geo-alt"></i>Chikago,US</p>
+      </div>
+      <div class="t">
+          <p>Software</p>
+      </div>
+     
+  </div>
+  <div class="fd">
+      <div class="apply1" >
+          <p>18 Job Open</p>
+      </div>
+     
+    
+  </div>
       
 
     </div>`

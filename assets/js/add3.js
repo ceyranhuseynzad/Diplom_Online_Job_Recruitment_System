@@ -6,10 +6,11 @@ let priceInput = document.querySelector(".price");
 let addBtn = document.querySelector(".addbtn");
 
 
-axios(`http://localhost:3000/all/${id}`).then((res) => {
+axios(`http://localhost:3000/employers/${id}`).then((res) => {
   titleInput.value = res.data.title
   aboutInput.value = res.data.about
   priceInput.value = res.data.price
+  roundedImage.src = res.data.photo
 
   addBtn.innerHTML = "EDIT";
 });
@@ -29,17 +30,19 @@ photoInput.addEventListener('input', (e) => {
 
 addBtn.addEventListener("click", function () {
   if (!id) {
-    axios.post(`http://localhost:3000/all`, {
+    axios.post(`http://localhost:3000/employers`, {
       title: titleInput.value,
       about: aboutInput.value,
       price: priceInput.value,
+      photo: roundedImage.src,
       
     });
   } else {
-    axios.patch(`http://localhost:3000/all/${id}`, {
+    axios.patch(`http://localhost:3000/employers/${id}`, {
       title: titleInput.value,
       about: aboutInput.value,
       price: priceInput.value,
+      photo: roundedImage.src,
  
     });
   }
