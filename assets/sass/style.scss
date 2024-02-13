@@ -138,25 +138,8 @@ nav {
 
     }
 }
+    
 
-@media screen and (max-width:992px) {
-    nav {
-
-        .nav-list {
-            display: none;
-        }
-
-        .nav-icon {
-            display: flex;
-
-        }
-
-        .bi {
-            font-size: 30px;
-        }
-
-    }
-}
 
 #banner {
 
@@ -975,8 +958,10 @@ select {
         flex-direction: column;
 
         .feature-cards {
+            flex-wrap: wrap;
             display: flex;
             justify-content: space-around;
+           
 
             .full {
                 p {
@@ -2360,4 +2345,14 @@ p{
         }
     }
 
+}
+.loadmore{
+    background-color: #0541c2;
+    display: flex;
+    gap: 40px;
+    color :white;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 15px;
+    padding: 10px;
 }

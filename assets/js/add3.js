@@ -2,8 +2,9 @@ let id = new URLSearchParams(window.location.search).get("id");
 let titleInput = document.querySelector(".title");
 let aboutInput = document.querySelector(".about");
 let priceInput = document.querySelector(".price");
-
+let photoInput = document.querySelector(".photo");
 let addBtn = document.querySelector(".addbtn");
+let roundedImage = document.querySelector(".rounded-image");
 
 
 axios(`http://localhost:3000/employers/${id}`).then((res) => {

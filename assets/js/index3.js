@@ -5,7 +5,7 @@ let filteredcard=document.querySelector(".f-crd");
 console.log(filteredbuttons);
 
 
-// let loadMore = document.querySelector(".loadmore");
+let loadMore = document.querySelector(".loadmore");
 let maxlength = 3;
 
 let filteredArr = [];
@@ -36,37 +36,40 @@ async function getAllCards() {
     cards.innerHTML += `
  
     <div class="f-crd" sytle=" height:400px;">
-    <div class="fa">
-      <img src="https://htmldesigntemplates.com/html/jobee/images/icons/1.png" alt="">
-    </div>
- 
-    <div class="fc">
-        <h1>LinkedIn</h1>
-        <span>Full Stack Engineer</span>
-        <div class="bibi">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-        </div>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-    </div>
-    <div class="f-b">
-        <div class="t">
-            <p><i class="bi bi-geo-alt"></i>Chikago,US</p>
-        </div>
-        <div class="t">
-            <p>Software</p>
-        </div>
-       
-    </div>
-    <div class="fd">
-        <div class="apply1" >
-            <p>18 Job Open</p>
-        </div>
-       
+  <div class="fa">
+    <img width="60px" src="${el.img}" alt="">
+  </div>
+
+  <div class="fc">
+      <h1>${el.name}</h1>
+      <span>${el.job}</span>
+      <div class="bibi">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+      </div>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+  </div>
+  <div class="f-b">
+      <div class="t">
+          <p><i class="bi bi-geo-alt"></i>Chikago,US</p>
+      </div>
+      <div class="t">
+          <p>Software</p>
+      </div>
+     
+  </div>
+  <div class="fd">
+      <div class="apply1" >
+          <p>18 Job Open</p>
+      </div>
+     
+    
+  </div>
       
-    </div>
+
+    
     <div class="ft" >
     <a  href="./details.html?id=${el.id}" class="btn btn-primary" style=" width:250px;margin:auto;"  >LEARN MORE</a>
     <div style="margin:auto; display: flex;
@@ -105,7 +108,7 @@ async function addFav(cardId) {
   axios.post(`http://localhost:3000/save3`, obj);
 }
 
-// loadMore.addEventListener("click", function () {
-//   maxlength = maxlength + 3;
-//   getAllCards();
-// })
+ loadMore.addEventListener("click", function () {
+  maxlength = maxlength + 3;
+  getAllCards();
+ })

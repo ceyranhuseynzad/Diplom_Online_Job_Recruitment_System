@@ -11,8 +11,8 @@ async function getAllCards() {
   let data =  res.data;
   copyArr = data;
   cards.innerHTML = "";
-  // filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
-  filteredArr=data;
+   filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
+  //filteredArr=data;
   filteredArr.slice(0, maxlength).forEach((el) => {
     cards.innerHTML += `
     <div class=f-card>
@@ -61,8 +61,8 @@ function deleteBtn(id) {
   axios.delete(`${BASE_URL}/${id}`);
 }
 
-// async function addFav(cardId) {
-//   let res = await axios(`${BASE_URL}/${cardId}`);
-//   let obj = await res.data;
-//   axios.post(`${BASE_URL}`, obj);
-// }
+ async function addFav(cardId) {
+   let res = await axios(`${BASE_URL}/${cardId}`);
+   let obj = await res.data;
+   axios.post(`http://localhost:3000/save`, obj);
+ }

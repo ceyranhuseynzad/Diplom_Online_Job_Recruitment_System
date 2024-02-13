@@ -1,35 +1,27 @@
+
+
+
+
+
 let cards = document.querySelector(".feature-cards");
 const filteredbuttons=document.querySelector(".s");
 let filteredcard=document.querySelector(".f-card");
-console.log(filteredbuttons);
 
 
-// let loadMore = document.querySelector(".loadmore");
+
+let loadMore = document.querySelector(".loadmore");
 let maxlength = 3;
 
 let filteredArr = [];
 let copyArr = [];
-// const filteredCard =e=> {
-//   document.querySelector(".active").classList.remove("active")
-//   e.target.classList.add("active");
-//   filteredcard.forEach(card=>{
-//     card.classList.add("hide");
-   
-//     if(card.dataset.name===e.target.dataset.name||e.target.dataset.name==="all"){
-//       card.classList.remove("hide");
-//     }
 
-//   });
-
-// };
-// filteredbuttons.forEach(button=>button.addEventListener("click",filteredCard));
 
 async function getAllCards() {
   let res = await axios("http://localhost:3000/all");
   let data = await res.data;
   copyArr = data;
   cards.innerHTML = "";
-  // filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
+  //filteredArr = filteredArr.length || searchInput.value ? filteredArr : data;
   filteredArr=data;
   filteredArr.slice(0, maxlength).forEach((el) => {
     cards.innerHTML += `
@@ -86,7 +78,7 @@ async function addFav(cardId) {
   axios.post(`http://localhost:3000/save`, obj);
 }
 
-// loadMore.addEventListener("click", function () {
-//   maxlength = maxlength + 3;
-//   getAllCards();
-// })
+ loadMore.addEventListener("click", function () {
+   maxlength = maxlength + 3;
+   getAllCards();
+ })

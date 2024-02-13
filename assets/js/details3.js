@@ -7,12 +7,12 @@ async function getAllCards() {
   cards.innerHTML = `
   <div class="f-crd" sytle=" height:400px;">
   <div class="fa">
-    <img src="https://htmldesigntemplates.com/html/jobee/images/icons/1.png" alt="">
+    <img src="${data.photo}" alt="">
   </div>
 
   <div class="fc">
-      <h1>LinkedIn</h1>
-      <span>Full Stack Engineer</span>
+      <h1>${data.name}</h1>
+      <span>${data.job}</span>
       <div class="bibi">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>

@@ -100,17 +100,6 @@ nav .nav-icon {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 992px) {
-  nav .nav-list {
-    display: none;
-  }
-  nav .nav-icon {
-    display: flex;
-  }
-  nav .bi {
-    font-size: 30px;
-  }
-}
 #banner {
   padding: 18px 0px;
 }
@@ -722,6 +711,7 @@ select option {
   flex-direction: column;
 }
 #featured-job .features .feature-cards {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
 }
@@ -1742,4 +1732,15 @@ footer .subscribe input {
 }
 .f-crd .apply1 p {
   color: white;
+}
+
+.loadmore {
+  background-color: #0541c2;
+  display: flex;
+  gap: 40px;
+  color: white;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 15px;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
