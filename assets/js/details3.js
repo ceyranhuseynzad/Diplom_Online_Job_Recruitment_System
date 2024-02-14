@@ -1,13 +1,13 @@
 let id = new URLSearchParams(window.location.search).get("id");
-let cards = document.querySelector(".cards");
+let cardsa = document.querySelector(".cards");
 
 async function getAllCards() {
-  let res = await axios(`http://localhost:3000/all/${id}`);
+  let res = await axios(`http://localhost:3000/employers/${id}`);
   let data = await res.data;
-  cards.innerHTML = `
+  cardsa.innerHTML= `
   <div class="f-crd" sytle=" height:400px;">
   <div class="fa">
-    <img src="${data.photo}" alt="">
+    <img src="${data.img}" alt="">
   </div>
 
   <div class="fc">

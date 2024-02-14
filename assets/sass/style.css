@@ -11,6 +11,10 @@
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -18,12 +22,16 @@ a {
 
 .div {
   font-family: "Poppins", sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
   width: 100%;
-  padding: 30px 0px;
+  position: fixed;
+  padding: 10px 0px;
 }
 nav .nav-list {
   align-items: center;
@@ -94,14 +102,14 @@ nav .nav-icon {
     display: none;
   }
   nav .nav-icon {
-    display: flex;
+    display: block;
   }
   nav .bi {
     font-size: 30px;
   }
 }
 #banner {
-  padding: 18px 0px;
+  padding: 90px 0px;
 }
 #banner h1 {
   font-weight: 700;
@@ -325,7 +333,7 @@ select option {
   justify-content: space-around;
   gap: 80px;
 }
-#job-portal .portal .btn1 {
+#job-portal .portal .btn1, #job-portal .portal .btn2 {
   background-color: rgb(27, 134, 234);
   color: white;
   border: none;
@@ -335,22 +343,9 @@ select option {
   font-weight: 900;
   transition: all 0.5s linear;
 }
-#job-portal .portal .btn1:hover {
-  box-shadow: inset 10rem 0 0 0 white, inset -10rem 0 0 0 white;
+#job-portal .portal .btn1:hover, #job-portal .portal .btn2:hover {
+  box-shadow: inset 30rem 0 0 0 white, inset -30rem 0 0 0 white;
   color: rgb(0, 132, 255);
-}
-#job-portal .portal .btn2 {
-  color: gray;
-  border: none;
-  border-radius: 17px;
-  font-size: 15px;
-  padding: 10px;
-  font-weight: 900;
-  transition: all 0.5s linear;
-}
-#job-portal .portal .btn2:hover {
-  box-shadow: inset 10rem 0 0 0 rgb(0, 145, 255), inset -10rem 0 0 0 rgb(0, 187, 255);
-  color: white;
 }
 #job-portal .portal h1 {
   font-size: 40px;
@@ -676,11 +671,21 @@ select option {
   gap: 40px;
 }
 #most-demand .demanding-card .d-card {
+  display: flex;
+  flex-direction: column;
   width: 240px;
   height: 290px;
   background-color: white;
   border-radius: 30px;
   padding: 10px 10px;
+  margin: auto;
+}
+#most-demand .demanding-card .d-card .bi {
+  background-color: rgb(36, 164, 255);
+  color: white;
+  border-radius: 10px;
+  padding: 27px;
+  font-size: 50px;
   margin: auto;
 }
 #most-demand .demanding-card .d-card p {
@@ -709,11 +714,13 @@ select option {
 #featured-job .features {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 #featured-job .features .feature-cards {
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
+  gap: 30px;
 }
 #featured-job .features .feature-cards .full {
   background-color: #8ddcf6;
@@ -1136,10 +1143,15 @@ footer .subscribe input {
   display: flex;
   align-items: center;
   margin: auto;
+  transition: all 0.5s linear;
+}
+.category-form #submit:hover {
+  box-shadow: inset 30rem 0 0 0 white, inset -30rem 0 0 0 white;
+  color: green;
 }
 
 #about {
-  padding: 10px 0;
+  padding: 100px 0;
 }
 #about .contanier {
   width: 100%;
@@ -1181,6 +1193,10 @@ footer .subscribe input {
   padding: 10px;
   display: flex;
   gap: 10px;
+}
+#numbr .numbr .num {
+  font-size: 35px;
+  color: #03b4ef;
 }
 #numbr .numbr .bi {
   background-color: #8f0fd4;
@@ -1256,83 +1272,23 @@ footer .subscribe input {
   padding: 20px;
   width: 40%;
   margin: auto;
+  transition: all 0.5s linear;
 }
-
-@media screen and (max-width: 768px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 992px) {
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-#newsletter {
-  margin-top: 40px;
-  padding: 60px 0;
-  background-color: rgb(239, 239, 239);
-}
-#newsletter .newsletter {
-  display: flex;
-  justify-content: space-around;
-  gap: 40px;
-}
-#newsletter .newsletter h1 {
-  font-size: 30px;
+#pages .pages .cards .card button:hover {
+  box-shadow: inset 30rem 0 0 0 white, inset -30rem 0 0 0 white;
   color: #0541c2;
 }
-#newsletter .newsletter p {
-  font-size: 17px;
-  color: gray;
-}
-#newsletter .newsletter .button {
-  height: 50px;
-  width: 500px;
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid gray;
-  background-color: #0541c2;
-  border-radius: 6px;
-  color: white;
-}
-#newsletter .newsletter .button input {
-  border: none;
-  width: 80%;
-}
-#newsletter .newsletter .button .subscribe {
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  background-color: #0541c2;
-  height: 100%;
-}
 
 @media screen and (max-width: 768px) {
-  .newsletter {
+  .cards {
     flex-direction: column;
     align-items: center;
-  }
-  input {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 5px;
   }
 }
 @media screen and (max-width: 992px) {
-  .newsletter {
+  .cards {
     flex-direction: column;
     align-items: center;
-  }
-  input {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 5px;
   }
 }
 #job .job {
@@ -1353,6 +1309,7 @@ footer .subscribe input {
   border-radius: 50%;
   color: white;
   font-size: 30px;
+  padding: 0 7px;
 }
 #job .job .inpt .inp p {
   color: rgb(83, 166, 255);
@@ -1522,6 +1479,9 @@ footer .subscribe input {
     flex-direction: column;
   }
 }
+#error {
+  padding: 100px 0;
+}
 #error .error {
   display: flex;
   justify-content: center;
@@ -1576,6 +1536,7 @@ footer .subscribe input {
   }
 }
 #about-cand {
+  padding: 100px 0;
   width: 100%;
 }
 #about-cand .about-cand {
@@ -1729,6 +1690,7 @@ footer .subscribe input {
   color: white;
   padding: 0 10px;
   padding-top: 10px;
+  margin: 10px;
 }
 .f-crd .apply1 p {
   color: white;
@@ -1743,4 +1705,75 @@ footer .subscribe input {
   padding-top: 10px;
   font-size: 15px;
   padding: 10px;
+}
+
+.menu-list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 100;
+}
+.menu-list .close {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  font-size: 30px;
+  color: white;
+}
+.menu-list .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  transform: translateX(0);
+  height: 100%;
+  display: block;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  transition: all 0.8s ease-in-out;
+  padding: 30px 30px;
+}
+.menu-list .content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-list .content ul li {
+  list-style: none;
+  color: white;
+}
+.menu-list .content ul a {
+  list-style-type: none;
+}
+
+.to-top {
+  background-color: rgb(77, 200, 249);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 32px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

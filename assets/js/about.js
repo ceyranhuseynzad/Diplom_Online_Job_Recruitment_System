@@ -6,20 +6,20 @@ menuList.innerHTML = `
         <p class="close">X</p>
         <div class="content">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a> </li>
-                <li><a href="findjob.html">FIND A JOB</a></li>
-                <li><a href="candidates.html">CANDIDATES</a></li>
+                <li>HOME</li>
+                <li>ABOUT </li>
+                <li>FIND A JOB</li>
+                <li>CANDIDATES</li>
                 <li>
-                   <a href="employers.html"> EMPLOYERS</a>
+                    EMPLOYERS
                 </li>
-                <li><a href="pages.html">PAGES</a></li>
+                <li>PAGES</li>
                 <li>BLOG
                    
                     
                 </li>
-                <li><a href="register.html">REGISTER</a></li>
-                <li><a href="login.html">SIGN IN</a></li>
+                <li>REGISTER</li>
+                <li>SIGN IN</li>
             </ul>
         </div>
     </div>
@@ -73,45 +73,20 @@ document.addEventListener("scroll", function () {
 
     }
 })
+let num = document.querySelectorAll(".num")
+console.log(num);
+let interval = 2000;
+num.forEach((nums) => {
+    let start = 0
+    let end = parseInt(nums.getAttribute("data-val"))
+    let dur = Math.floor(interval / end)
 
-let id = new URLSearchParams(window.location.search).get("id");
-let cards = document.querySelector(".cards");
+    let count = setInterval(function () {
+        start += 1;
+        nums.textContent = start + "+";
+        if (start == end) {
+            clearInterval(count)
+        }
+    }, dur);
+})
 
-async function getAllCards() {
-  let res = await axios(`http://localhost:3000/candidates/${id}`);
-  let data = await res.data;
-  cards.innerHTML = `
-  <div class="f-crd">
-  <div class="fa">
-    <img src="${data.img}" alt="">
-  </div>
-  
-  <div class="fc">
-      <h1>${data.name}</h1>
-      <span>${data.job}</span>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-  </div>
-  <div class="f-b">
-      <div class="p">
-          <p>Figma</p>
-      </div>
-      <div class="p">
-          <p>Java</p>
-      </div>
-      <div class="p">
-          <p>Photoshop</p>
-      </div>
-  </div>
-  <div class="fd">
-      <div class="apply">
-          <p><i class="bi bi-geo-alt"></i>Azerbaijan</p>
-      </div>
-      <div class="cash">
-          <p><span>${data.price} </span>|hr</p>
-      </div>
-    
-  </div>
-    </div>`
-    ;
-}
-getAllCards();
