@@ -44,6 +44,9 @@ nav {
    // opacity: 0.6;
    // padding-top: 5px;
     // gap: 40px;
+    img{
+        width: 150px;
+    }
 
     .nav-list {
         align-items: center;
@@ -70,9 +73,11 @@ nav {
         .ul {
             display: flex;
             gap: 30px;
+            
 
             align-items: center;
             justify-content: center;
+            font-size: 15px;
 
 
             .a {
@@ -255,7 +260,7 @@ button {
     font-size: 15px;
     font-weight: 900;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     padding: 20px 10px;
     margin: 10px auto;
@@ -2117,17 +2122,21 @@ footer {
         .about1 {
             display: flex;
             flex-direction: column;
-            margin: auto;
+            
             gap: 40px;
 
             .h1 {
                 margin: auto;
+                font-weight: 700;
+                font-size: 30px;
+                
 
             }
 
             .p {
                 color: gray;
                 margin: auto;
+                font-size: 15px;
             }
 
             .banner1 {
@@ -2322,7 +2331,10 @@ p{
         right: 100px;
         top: 50px;
         font-size: 30px;
-        color: white;
+        color: rgb(0, 162, 255);
+    }
+    a{
+        list-style-type: none;
     }
 
     .content {
@@ -2333,7 +2345,7 @@ p{
         transform: translateX(0);
         height: 100%;
         display: block;
-        background-color: black;
+        background-color: rgb(39, 140, 255);
         opacity: .8;
         color: white;
         transition: all .8s ease-in-out;
@@ -2349,7 +2361,7 @@ p{
               color: white;
             }
             a{
-                list-style-type: none;
+                list-style:inside;
             }
 
 

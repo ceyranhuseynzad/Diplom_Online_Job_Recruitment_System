@@ -5,21 +5,23 @@ menuList.innerHTML = `
     <div class="menu-list">
         <p class="close">X</p>
         <div class="content">
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT </li>
-                <li>FIND A JOB</li>
-                <li>CANDIDATES</li>
+            <ul >
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="findjob.html">FIND A JOB</a></li>
+                <li><a href="candidates.html">CANDIDATES</a></li>
                 <li>
-                    EMPLOYERS
+                   <a href="employers.html"> EMPLOYERS</a>
                 </li>
-                <li>PAGES</li>
+                <li><a href="pages.html">PAGES</a></li>
                 <li>BLOG
-                   
+                <li><a href="add.html">ADD</a></li>
+                <li><a href="save.html">FAV</a></li>
+                
                     
                 </li>
-                <li>REGISTER</li>
-                <li>SIGN IN</li>
+                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="login.html">SIGN IN</a></li>
             </ul>
         </div>
     </div>
@@ -75,6 +77,7 @@ document.addEventListener("scroll", function () {
 })
 
 
+
 let cards = document.querySelector(".feature-cards");
 let BASE_URL = `http://localhost:3000/save`;
 
@@ -112,15 +115,7 @@ async function getAllCards() {
 
   
           </div>
-          <div class="ft">
-          <a  href="./details.html?id=${el.id}" class="btn btn-primary" style=" width:250px;margin:auto;"  >LEARN MORE</a>
-          <div style="margin:auto; display: flex;
-          justify-content: space-around; gap:20px; padding-top:10px; ">
-            <a onclick=deleteBtn(${el.id}) class="btn btn-danger" >DELETE</a>
-            <a onclick="editBtn(${el.id})" class="btn btn-secondary "href="./add.html?id=${el.id}">EDİT</a>
-            <a onclick="addFav(${el.id})" class="btn btn-dark" >ADD FAV</a>
-          </div>
-          </div>
+      
 </div>
         </div>
       </div>

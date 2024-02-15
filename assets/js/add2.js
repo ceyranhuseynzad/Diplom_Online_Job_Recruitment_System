@@ -5,7 +5,7 @@ menuList.innerHTML = `
     <div class="menu-list">
         <p class="close">X</p>
         <div class="content">
-            <ul>
+            <ul >
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a> </li>
                 <li><a href="findjob.html">FIND A JOB</a></li>
@@ -15,7 +15,9 @@ menuList.innerHTML = `
                 </li>
                 <li><a href="pages.html">PAGES</a></li>
                 <li>BLOG
-                   
+                <li><a href="add2.html">ADD</a></li>
+                <li><a href="save2.html">FAV</a></li>
+                
                     
                 </li>
                 <li><a href="register.html">REGISTER</a></li>
@@ -74,6 +76,7 @@ document.addEventListener("scroll", function () {
     }
 })
 
+
 let id = new URLSearchParams(window.location.search).get("id");
 let titleInput = document.querySelector(".title");
 let aboutInput = document.querySelector(".about");
@@ -88,8 +91,6 @@ let roundedImage = document.querySelector(".rounded-image");
 axios(`http://localhost:3000/candidate/${id}`).then((res) => {
   titleInput.value = res.data.name
   aboutInput.value = res.data.job
-
-  roundedImage.src = res.data.img
 
   addBtn.innerHTML = "EDIT";
 
@@ -106,7 +107,7 @@ addBtn.addEventListener("click", function () {
       job: aboutInput.value,
     
       img: roundedImage.src,
-      price: priceInput.value,
+    
      
       
     });
@@ -116,7 +117,7 @@ addBtn.addEventListener("click", function () {
       job: aboutInput.value,
     
       img: roundedImage.src,
-      price: priceInput.value,
+ 
      
  
     });

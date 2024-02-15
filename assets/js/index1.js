@@ -5,21 +5,23 @@ menuList.innerHTML = `
     <div class="menu-list">
         <p class="close">X</p>
         <div class="content">
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT </li>
-                <li>FIND A JOB</li>
-                <li>CANDIDATES</li>
+            <ul >
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="findjob.html">FIND A JOB</a></li>
+                <li><a href="candidates.html">CANDIDATES</a></li>
                 <li>
-                    EMPLOYERS
+                   <a href="employers.html"> EMPLOYERS</a>
                 </li>
-                <li>PAGES</li>
+                <li><a href="pages.html">PAGES</a></li>
                 <li>BLOG
-                   
+                <li><a href="add.html">ADD</a></li>
+                <li><a href="save.html">FAV</a></li>
+                
                     
                 </li>
-                <li>REGISTER</li>
-                <li>SIGN IN</li>
+                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="login.html">SIGN IN</a></li>
             </ul>
         </div>
     </div>
@@ -73,6 +75,7 @@ document.addEventListener("scroll", function () {
 
     }
 })
+
 
 
 let cards = document.querySelector(".cards");

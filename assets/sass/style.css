@@ -33,6 +33,9 @@ nav {
   position: fixed;
   padding: 10px 0px;
 }
+nav img {
+  width: 150px;
+}
 nav .nav-list {
   align-items: center;
 }
@@ -56,6 +59,7 @@ nav .nav-list .ul {
   gap: 30px;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
 }
 nav .nav-list .ul .a {
   position: relative;
@@ -190,7 +194,6 @@ button {
   font-size: 15px;
   font-weight: 900;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 20px 10px;
   margin: 10px auto;
@@ -1551,15 +1554,17 @@ footer .subscribe input {
 #about-cand .about-cand .about1 {
   display: flex;
   flex-direction: column;
-  margin: auto;
   gap: 40px;
 }
 #about-cand .about-cand .about1 .h1 {
   margin: auto;
+  font-weight: 700;
+  font-size: 30px;
 }
 #about-cand .about-cand .about1 .p {
   color: gray;
   margin: auto;
+  font-size: 15px;
 }
 #about-cand .about-cand .about1 .banner1 {
   display: flex;
@@ -1724,7 +1729,10 @@ footer .subscribe input {
   right: 100px;
   top: 50px;
   font-size: 30px;
-  color: white;
+  color: rgb(0, 162, 255);
+}
+.menu-list a {
+  list-style-type: none;
 }
 .menu-list .content {
   position: absolute;
@@ -1734,7 +1742,7 @@ footer .subscribe input {
   transform: translateX(0);
   height: 100%;
   display: block;
-  background-color: black;
+  background-color: rgb(39, 140, 255);
   opacity: 0.8;
   color: white;
   transition: all 0.8s ease-in-out;
@@ -1750,7 +1758,7 @@ footer .subscribe input {
   color: white;
 }
 .menu-list .content ul a {
-  list-style-type: none;
+  list-style: inside;
 }
 
 .to-top {

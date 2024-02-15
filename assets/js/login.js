@@ -6,7 +6,7 @@ menuList.innerHTML = `
         <p class="close">X</p>
         <div class="content">
             <ul>
-                <li>HOME</li>
+                <li style="list-style:none;">HOME</li>
                 <li>ABOUT </li>
                 <li>FIND A JOB</li>
                 <li>CANDIDATES</li>

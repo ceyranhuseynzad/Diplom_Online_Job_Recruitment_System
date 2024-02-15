@@ -5,7 +5,7 @@ menuList.innerHTML = `
     <div class="menu-list">
         <p class="close">X</p>
         <div class="content">
-            <ul>
+            <ul >
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a> </li>
                 <li><a href="findjob.html">FIND A JOB</a></li>
@@ -15,7 +15,9 @@ menuList.innerHTML = `
                 </li>
                 <li><a href="pages.html">PAGES</a></li>
                 <li>BLOG
-                   
+                <li><a href="add.html">ADD</a></li>
+                <li><a href="save.html">FAV</a></li>
+                
                     
                 </li>
                 <li><a href="register.html">REGISTER</a></li>
@@ -74,6 +76,8 @@ document.addEventListener("scroll", function () {
     }
 })
 
+
+
 let id = new URLSearchParams(window.location.search).get("id");
 let titleInput = document.querySelector(".title");
 let aboutInput = document.querySelector(".about");
@@ -83,10 +87,10 @@ let addBtn = document.querySelector(".addbtn");
 
 
 axios(`http://localhost:3000/all/${id}`).then((res) => {
-  titleInput.value = res.data.name
-  aboutInput.value = res.data.job
-
-  roundedImage.src = res.data.img
+  titleInput.value = res.data.hh
+  aboutInput.value = res.data.pi
+  priceInput.value = res.data.price
+ 
 
   addBtn.innerHTML = "EDIT";
 });
@@ -96,22 +100,21 @@ axios(`http://localhost:3000/all/${id}`).then((res) => {
 addBtn.addEventListener("click", function () {
   if (!id) {
     axios.post(`http://localhost:3000/all`, {
-      name: titleInput.value,
-      job: aboutInput.value,
+      hh: titleInput.value,
+      pi: aboutInput.value,
     
-      img: roundedImage.src,
+     
       price: priceInput.value,
      
       
     });
   } else {
     axios.patch(`http://localhost:3000/all/${id}`, {
-      name: titleInput.value,
-      job: aboutInput.value,
-    
-      img: roundedImage.src,
-      price: priceInput.value,
-     
+        hh: titleInput.value,
+        pi: aboutInput.value,
+      
+       
+        price: priceInput.value,
  
     });
   }

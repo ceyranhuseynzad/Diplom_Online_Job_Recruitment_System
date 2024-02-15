@@ -5,21 +5,23 @@ menuList.innerHTML = `
     <div class="menu-list">
         <p class="close">X</p>
         <div class="content">
-            <ul>
-                <li>HOME</li>
-                <li>ABOUT </li>
-                <li>FIND A JOB</li>
-                <li>CANDIDATES</li>
+            <ul >
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="findjob.html">FIND A JOB</a></li>
+                <li><a href="candidates.html">CANDIDATES</a></li>
                 <li>
-                    EMPLOYERS
+                   <a href="employers.html"> EMPLOYERS</a>
                 </li>
-                <li>PAGES</li>
+                <li><a href="pages.html">PAGES</a></li>
                 <li>BLOG
-                   
+                <li><a href="add2.html">ADD</a></li>
+                <li><a href="save2.html">FAV</a></li>
+                
                     
                 </li>
-                <li>REGISTER</li>
-                <li>SIGN IN</li>
+                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="login.html">SIGN IN</a></li>
             </ul>
         </div>
     </div>
@@ -73,4 +75,69 @@ document.addEventListener("scroll", function () {
 
     }
 })
+
+
+let cards = document.querySelector(".cards");
+let BASE_URL = `http://localhost:3000/save2`;
+
+
+let filteredArr = [];
+let copyArr = [];
+
+async function getAllCards() {
+  let res = await axios("http://localhost:3000/save2");
+  let data =  res.data;
+  //copyArr = data;
+  cards.innerHTML = "";
+  filteredArr = filteredArr.length ? filteredArr : data;
+  
+ // filteredArr=data;
+  filteredArr.forEach((el) => {
+    cards.innerHTML += `
+    <div class="f-crd">
+         <div class="fa">
+           <img src="${el.img}" alt="">
+         </div>
+        
+         <div class="fc">
+             <h1>${el.name}</h1>
+             <span>${el.job}</span>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+         </div>
+         <div class="f-b">
+             <div class="p">
+                <p>Figma</p>
+            </div>
+             <div class="p">
+                 <p>Java</p>
+             </div>
+             <div class="p">
+                 <p>Photoshop</p>
+             </div>
+        </div>
+        <div class="fd">
+           <div class="apply">
+               <p><i class="bi bi-geo-alt"></i>Azerbaijan</p>
+            </div>
+           <div class="cash">
+                <p><span>${el.price} </span>|hr</p>
+            </div>
+          
+        </div>
+      
+      </div>
+        `;
+  });
+}
+getAllCards();
+
+
+
+
+
+function deleteBtn(id) {
+  axios.delete(`${BASE_URL}/${id}`);
+}
+
+ 
 
